@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.1/handlebars.js"></script>
+</head>
+
+<body>
+
+    <script id="users-template" type="text/x-handlebars-template">
+        <div id="container">
+            {{#each result}}
+            <div class="ticket">
+                <div class="name">{{name}}</div>
+                <div class="email"><a href="mailto:{{email}}">{{email}}</a></div>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+    <div id="view">
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

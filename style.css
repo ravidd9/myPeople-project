@@ -1,0 +1,21 @@
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: Tahoma;
+}
+.ticket{
+    background-color: rgb(135, 179, 78);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+.ticket:hover{
+    background-color:yellow;
+}
+.name{
+    margin: 10px;
+}
+.email{
+    margin: 10px;
+}
